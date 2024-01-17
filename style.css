@@ -1,0 +1,114 @@
+body{
+    background-image: url(./Assets/background.jpg);
+    background-size: cover; 
+}
+
+/* Main Section */
+
+.container{
+    height: 500px;
+    width: 400px;
+    margin: 80px auto;
+    position: relative;
+}
+.child-1{
+    height: 150px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: url(./Assets/Profile-cover.jpeg);
+    background-size: cover;
+    position: absolute;
+    background-color: white;
+}
+.quote{
+    font-size: 20px;
+    margin-top: 0px;
+    color: rgb(139, 139, 139);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+.child-2{
+  height: 340px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%; 
+  margin-top: 80px; 
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 60px;
+  text-align: center;  
+
+}
+p{
+    font-size: large;
+    padding-top: 0px;
+    
+}
+.Head{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.profile{
+    z-index: 1;
+    position: absolute;
+    height: 140px;
+    left: 135px;
+    top: 100px;
+    border-radius: 50%;
+}
+.contact{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 10px 10px;
+    position: absolute;
+    left: 88px;
+}
+.head{
+    margin-top: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+a{
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-radius: 50%;
+    
+}
+i{
+    transition: .3s;
+}
+
+.i:link{
+    color: rgb(255, 255, 255);
+}
+i:hover{
+   font-size: 40px;
+}
+
+/* Responsiveness */
+
+@media (max-width:600px) {
+    .container{
+        width: 300px;
+    }
+    .profile{
+        left: 85px;
+    }
+    .contact{
+        left: 40px;
+    }
+    
+}
+
